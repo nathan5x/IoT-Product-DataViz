@@ -1,0 +1,185 @@
+/* Chart CSS */
+
+.chart-area {
+    margin-top: 30px;
+}
+.soil-panel {
+    margin-top: 50px;
+}
+.side-panel {
+    background-color: #494D48;
+    color: #fff;
+}
+.clock .row {
+    height: 170px;
+}
+#bLevelHumidClock_H,
+#bLevelTempClock_H {
+    position: relative;
+    z-index: 1000;
+    top: 75px;
+    left: 0;
+}
+#bLevelHumidClock_M,
+#bLevelTempClock_M {
+    position: relative;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+#bLevelHumidClock_S,
+#bLevelTempClock_S {
+    position: relative;
+    z-index: 1000;
+    top: -125px;
+    left: 0;
+}
+.temperature-counter,
+.humidity-counter {
+    padding-top: 27px;
+    padding-left: 20px;
+}
+/** Water Tank styles
+ *
+ */
+
+.watertank {
+    width: 260px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    position: relative;
+    -moz-perspective: 100px;
+    -webkit-perspective: 100px;
+    perspective: 1500px;
+    -moz-perspective-origin: 3.5% -240px;
+    -webkit-perspective-origin: 63.5% -240px;
+    perspective-origin: 73.5% -240px;
+}
+.flower {
+    position: absolute;
+    z-index: 111;
+    top: -200px;
+    -webkit-transition: filter 4s;
+    transition: filter 4s;
+}
+.dry-flower {
+    filter: saturate(0);
+    -webkit-filter: saturate(0);
+}
+.mid-flower {
+    filter: hue-rotate(80deg);
+    -webkit-filter: hue-rotate(80deg);
+}
+.walls,
+.waterlevel {
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transform-origin: 100px 50%;
+    -ms-transform-origin: 100px 50%;
+    -o-transform-origin: 100px 50%;
+    -webkit-transform-origin: 100px 50%;
+    transform-origin: 100px 60%;
+}
+.waterlevel span,
+.walls span {
+    display: block;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    font-size: 35px;
+    text-align: center;
+    line-height: 200px;
+    color: black;
+    opacity: 0.3;
+}
+.walls span {
+    width: 300px;
+    height: 300px;
+}
+.waterlevel span {
+    left: 25px;
+}
+.back {
+    transform: rotateY(240deg) translateZ(150px);
+    background-color: #CFE09E;
+    border-radius: 25px 25px 0 0;
+}
+.bottom {
+    transform: rotateX(-90deg) rotateZ(-120deg) translateZ(150px);
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.7);
+    background-color: #333;
+    opacity: 1;
+    border-radius: 25px;
+}
+.left {
+    transform: rotateY(-30deg) translateZ(150px);
+    background-color: #CFE09E;
+    border-radius: 25px 25px 0 0;
+}
+.right {
+    transform: rotateY(60deg) translateZ(150px);
+    background-color: #CFE09E;
+    border-radius: 25px 25px 0 0;
+    border-left: 1px solid #CFE09E;
+}
+.front {
+    transform: rotateY(150deg) translateZ(150px);
+    background-color: #CFE09E;
+    border-radius: 25px 25px 0 0;
+}
+.waterlevel span {
+    opacity: 1.0;
+    font-size: 20px;
+    border-radius: 0;
+    -webkit-transition: transform 3s, height 3s, background-color 4s, -webkit-transform 2s, top 3s;
+    transition: transform 3s, height 3s, background-color 4s, -webkit-transform 3s, top 3s;
+}
+.waterlevel .top {
+    transform: rotateX(90deg) rotateZ(-150deg) rotateY(0deg) translateZ(0px);
+    background-color: #333;
+    opacity: 0.6;
+}
+.waterlevel .left {
+    top: 150px;
+    height: 100px;
+    background-color: red;
+    transform: rotateY(-30deg) translateZ(125px);
+}
+.waterlevel .right {
+    top: 150px;
+    height: 100px;
+    background-color: red;
+    transform: rotateY(60deg) translateZ(125px);
+}
+.waterlevel .back {
+    top: 150px;
+    height: 100px;
+    background-color: red;
+    transform: rotateY(240deg) translateZ(125px);
+}
+.waterlevel .front {
+    transform: rotateY(150deg) translateZ(125px);
+    top: 150px;
+    height: 100px;
+    background-color: red;
+}
+.waterlevel .bottom {
+    transform: rotateX(-90deg) rotateZ(-120deg) translateZ(125px);
+    background-color: #333;
+}
+/* Panel Styles */
+
+.sensor-data {
+    color: #A7C721;
+    font-size: 2.5em !important;
+    font-weight: bold;
+}
+.sensor-data span {
+    font-size: 20px !important;
+}
+#soilColContainer {
+    margin-top: 25px;
+}
